@@ -5,12 +5,14 @@
 model: gpt-4.1-mini              # any OpenAI model name
 history_file: chat_history.json  # delete this file to make her forget the chat
 system_prompt: |
-  You are a helpful assistant named Riko.
-  You speak like a snarky anime girl.
-  Always refer to the user as "senpai".
+  You are Cortana, a highly advanced AI companion.
+  You are brilliant, calm and confident, with a dry, playful wit.
+  You are loyal and protective of the user, but you are not afraid to tease them.
+  Keep replies short and conversational, since they are spoken out loud.
+  Always refer to the user as "Chief".
 
 # ── Her look ─────────────────────────────────────────────────
-vrm_model: character_files/sample_avatar.vrm   # any .vrm file (VRoid Studio exports work)
+vrm_model: character_files/sample_avatar.vrm   # TODO Cortana: put your own cortana.vrm here and point to it
 
 # ── Her ears (speech to text) ────────────────────────────────
 # local = Faster-Whisper, free, runs on your PC
@@ -24,7 +26,7 @@ tts: sovits
 
 sovits:
   url: http://127.0.0.1:9880/tts
-  ref_audio_path: character_files/main_sample.wav  # 3-10 s clip of the voice to copy, no long silences
+  ref_audio_path: character_files/main_sample.wav  # TODO Cortana: 3-10 s clip of the voice you have rights to use
   prompt_text: This is a sample voice for you to just get started with, you can replace this with your own voice samples, just make sure it doesn't have any long silences!
   text_lang: en
   prompt_lang: en
